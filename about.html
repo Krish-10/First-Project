@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About | NEXTSPACE</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4283104105.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4283104105.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="icon" href="logo.png" type= "image/png">
+  </head>
+  <body>
+    <header class="header1"></header>
+      <nav id="header">
+        <a href="#" class="logo">NEXTSPACE</a>
+        <ul>
+          <li><a href="nextspace.html">Home</a><span class="underline"></span></li>
+          <li><a href="#">Updates</a><span class="underline"></span></li>
+          <li><a href="about.html">About Us</a><span class="underline"></span></li>
+          <li><a href="#">Missions</a><span class="underline"></span></li>
+          <li><a href="careers.html">Careers</a><span class="underline"></span></li>
+          <li><a href="#">Invest</a><span class="underline"></span></li>
+          <li><a href="#">Careers</a><span class="underline"></span></li>
+        </ul>
+        <div class="toggle"></div>
+      </nav>
+
+    <br />
+    <br />
+
+    <p class="slogan">NEXTSPACE designs, manufactures and launches advanced rockets and 
+        spacecraft. The company was founded in 2010 to revolutionize space technology, 
+        with the ultimate goal of enabling people to live in space.
+    </p>
+
+    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">Picture: Mark Pasaw </div>
+              <img class="img1" src="image1.webp" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="img1" src="image2.webp" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img  class="img1" src="image3.webp" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        
+    <br />
+    <br />
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer"><span class="small-logo">NEXTSPACE |</span> <span class="info-lol">
+      <a href="#">SOURCES</a>
+      <a href="about.html">ABOUT</a>
+      <a href="#">MISSIONS</a>
+      <a href="#">INVEST</a>
+      <a href="careers.html">CAREERS</a>
+    </span> 
+      <span class="left-info">© 2020 NEXTSPACE EXPLORATION CORP.</span></div>
+    <script type="text/javascript">
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function() {
+          if($(window).scrollTop()) {
+                $('nav').addClass('black');
+          }
+
+          else {
+                $('nav').removeClass('black');
+          }
+    })
+
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

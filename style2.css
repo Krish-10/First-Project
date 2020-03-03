@@ -1,0 +1,461 @@
+body, html{
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    background: url(hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.header1{
+    width: 100%;
+    height: 80vh;
+    background: url(hero2.webp) no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.header2{
+    width: 100%;
+    height: 80vh;
+    background: url(hero3.webp) no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    top: 0;
+}
+
+nav .logo{
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 2px;
+}
+
+nav ul{
+    position: relative;
+    display: inline-flex;
+}
+
+nav ul li{
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    position: relative;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.underline{
+    border-bottom: 0.5px solid white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+} 
+
+li a:hover ~ .underline{
+    visibility:visible;
+    transform: scaleX(0.70);
+}
+
+nav.black{
+    background: #000000;
+    transition: 1s;
+}
+
+@media (max-width: 922px){
+    nav ul{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #000000;
+        flex-direction: column;
+    }
+
+    nav ul li a{
+        margin: 5px 0;
+        font-size: 24px;
+    }
+}
+
+.first-text{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+section{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 150px 100px 100px;
+    color: whitesmoke;
+}
+
+section img{
+    width: 55%;
+    height: 1%;
+    margin-left: 30px;
+}
+
+section h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+section a{
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #EBEBEB;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.idea-heading{
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 50px;
+}
+
+.half-underline{
+    width: 25%;
+    height: 4px;
+    background: #EBEBEB;
+}
+
+.adult-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+
+}
+
+.container .card{
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background: #141414;
+    /* box-shadow: -6px -6px 20px rgba(255, 255,255,1),
+                 6px 6px 20px rgba(0, 0,0,0.1); */
+}
+
+.container .card:hover{
+    box-shadow: inset -6px -6px 10px rgba(255, 255,255,0.5),
+                 6px 6px 20px rgba(0, 0,0,0.05);
+}
+
+.container .card .imgBx{
+    position: relative;
+    text-align: center;
+}
+
+i{
+    color: #BDBDBD;
+    max-width: 200px;
+}
+
+.container .card .contentBx{
+    position: relative;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+
+.container .card .contentBx h2{
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+.container .card .contentBx p{
+    color: #BDBDBD;
+}
+
+.container .card:hover .imgBx,.container .card:hover .contentBx{
+    transform: scale(0.98);
+}
+
+.slogan{
+    position: absolute;
+    color: white;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.slogan-small{
+    position: absolute;
+    color: white;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-weight: 550;
+    line-height: 1.8rem;
+}
+
+.main-title{
+    position: absolute;
+    color: white;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 55px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.img1{
+    width: 10%;
+}
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #141414;
+    color: #F0F3F4;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .small-logo{
+    font-family: 'Audiowide', cursive;
+    font-size: 18px;
+  }
+
+  .left-info{
+      float: right;
+      margin-right: 150px;
+      font-size: 14px;
+      color: #D1D1D1;
+      margin-top: 3px;
+  }
+
+  .info-lol{
+    color: #D1D1D1;
+    margin: 20px;
+    letter-spacing: 1px;
+  }
+
+  .info-lol a{
+    margin: 5px;
+    color: #D1D1D1;
+    font-size: 13.5px;
+    text-decoration: none;
+  }
+
+  .info-lol a:hover{
+      border-bottom: 1px solid whitesmoke;
+  }
+
+  /* Style the search box */
+#mySearch {
+    padding: 15px;
+    font-size: 15px;
+    width: 40%;
+    caret-color: #e91e63;
+    box-shadow: gray;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    background: #000000;
+    color: #EBEBEB;
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+   border: 3px solid white;
+  }
+
+
+  .bpx{
+      align-content: center;
+      margin: auto;
+      text-align: center;
+
+  }
